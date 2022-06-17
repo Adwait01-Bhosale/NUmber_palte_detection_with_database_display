@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl
+            +Libre:wght@500&family=Great+Vibes&family=Mali&family=Montserrat&family=Pacifico&family=Poppins&
+            family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl+Libre:wght@500&family=Great+Vibes&
+            family=Mali&family=Montserrat&family=Pacifico&family=Poppins&family=Ubuntu:wght@300;400&family=Urbanist&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            />
+        <!-- <link rel="stylesheet" href="../static/uploads/fileUpload.css"> -->
+        <link rel="stylesheet" href="../static/uploads/getOCR.css">
+        <title>Get OCR</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/"><h1 class="logo">Detectron</h1></a>
+            <div class="nav-container">
+                <a href="/"><p>Home</p></a>
+                <a href="/services"><p>Services</p></a>
+                <a href="/get_ocr"><p style="color: lightblue;">Get OCR</p></a>
+                <a href="/about"><p>About Us</p></a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="wrapper">
+                <!-- <h1 style="width: 100%">{% block title %} New Entry {% endblock
+                    %}</h1> -->
+                <label for="image_input1">
+                    <form method="POST" enctype="multipart/form-data">
+                        <input
+                            type="file"
+                            class="file-input form-control-file"
+                            id="image_input1"
+                            name="file"
+                            size="60"
+                            required
+                            />
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Browse File to Upload</p>
+                        <button class="submit-btn" type="submit">Submit</button>
+                    </form>
+                </label>
+            </div>
+            <div class="hide-container">
+                <div class="setTimeHidden">
+                    <h2>Image uploaded</h2>
+                    <button class="okay-btn">Okay</button>
+                </div>
+            </div>
+        </div>
+        <script src="../static/uploads/getOCR.js"></script>
+    </body>
+</html>

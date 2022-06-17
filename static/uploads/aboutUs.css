@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    min-height: 120vh;
+    position: relative;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    min-height: 10vh;
+    background: rgb(73, 66, 66);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+}
+
+nav h1 {
+    font-family: 'Great Vibes', cursive; 
+    font-size: 2rem;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container a {
+    margin-left: 3rem;
+}

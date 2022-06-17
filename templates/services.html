@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl    +Libre:wght@500&family=Great+Vibes&family=Mali&family=Montserrat&family=Pacifico&family=Poppins&    family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl+Libre:wght@500&family=Great+Vibes& family=Mali&family=Montserrat&family=Pacifico&family=Poppins&family=Ubuntu:wght@300;400&family=Urbanist&display=swap"    rel="stylesheet"> 
+    <link rel="stylesheet" href="../static/uploads/services.css">
+    <title>Database Visualizer</title>
+</head>
+<body>
+    <nav>
+        <a href="/"><h1 class="logo">Detectron</h1></a>
+        <div class="nav-container">
+            <a href="/"><p>Home</p></a>
+            <a href="/services"><p style="color: lightblue;">Services</p></a>
+            <a href="/get_ocr"><p>Get OCR</p></a>
+            <a href="/about"><p>About Us</p></a>
+        </div>
+    </nav>
+    <div class="hide-container">
+        <div class="setTimeHidden">
+            <input placeholder="Enter Start Time" class="time-input" type="text">
+            <input placeholder="Enter End Time" class="time-input" type="text">
+            <button class="submit" type="submit">Submit</button>
+        </div>
+    </div>
+    <div class="filter-container">
+        <div class="search">
+            <input type="search" placeholder="Search here" name="" id="">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <button class="set-btn">Set Time</button>
+        <div class="time">Start Time</div>
+        <div class="time">End Time</div>
+        <div class="time">Location</div>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <th class="table-id">ID</th>
+                <th class="table-date">Date and Time</th>
+                <th class="table-reg">Vehicle Registration number</th>
+            </tr>
+            {% for student in students %}
+                <tr>
+                    <td>{{ student.id }}</td>
+                    <td>{{ student.created_at }}</td>
+                    <td>{{ student.bio }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <script src="../static/uploads/services.js"></script>
+</body>
+</html>

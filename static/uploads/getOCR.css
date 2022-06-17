@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    min-height: 10vh;
+    background: rgb(73, 66, 66);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+}
+
+nav h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container a {
+    margin-left: 3rem;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+form i {
+    font-size: 50px;
+    color: rgb(40, 7, 7);
+}
+
+form input {
+    display: none;
+}
+
+.submit-btn {
+    transform: translateY(8rem);
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    background: none;
+    border: none;
+    border-radius: 0.3rem;
+    background: rgb(37, 33, 33);
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transform: translateY(8rem);
+    background: rgb(78, 70, 70);
+}
+
+.wrapper {
+    height: 40%;
+    width: 30%;
+    background-color: rgb(255, 219, 219);
+    border-radius: 1rem;
+    border: dashed 4px rgb(70, 70, 70);
+}
+
+.hide-container {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.setTimeHidden {
+    opacity: 1;
+    height: 15rem;
+    width: 30rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0.3rem 0.3rem 0.5rem rgb(97, 97, 97);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.setTimeHidden button {
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    background: none;
+    border: none;
+    border-radius: 0.3rem;
+    background: rgb(37, 33, 33);
+    color: white;
+    cursor: pointer;
+}
